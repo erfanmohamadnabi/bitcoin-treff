@@ -727,6 +727,14 @@ a {
   top: 1.25rem;
 }
 
+.-left-11 {
+  left: -2.75rem;
+}
+
+.-left-0 {
+  left: -0px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -2113,6 +2121,11 @@ a {
   .tablet\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .tablet\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
