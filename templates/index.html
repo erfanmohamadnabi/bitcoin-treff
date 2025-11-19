@@ -320,7 +320,9 @@
                             <button class="mobile:hidden px-3 py-1 bg-secendry-100 text-white rounded hover:bg-primary-100 text-sm">buy & sell</button>
                             </td>
                         </tr>
-                        <tr>
+
+
+                        <tr class="hidden token">
                             <td class="px-6 py-4 whitespace-nowrap">
                             <div class="flex items-center space-x-3">
                                 <img class="w-9 h-9 rounded-full" src="./img/trx.svg" alt="BTC">
@@ -333,7 +335,7 @@
                             <button class="mobile:hidden px-3 py-1 bg-secendry-100 text-white rounded hover:bg-primary-100 text-sm">buy & sell</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="hidden token">
                             <td class="px-6 py-4 whitespace-nowrap">
                             <div class="flex items-center space-x-3">
                                 <img class="w-9 h-9 rounded-full" src="./img/shiba.svg" alt="BTC">
@@ -348,6 +350,9 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="flex items-center justify-start mt-3">
+                    <button id="show-token" class="w-20 h-8 text-gray-800 rounded-xl hover:bg-secendry-100 hover:text-white">see more</button>
+                </div>
             </div>
     
         </div>
@@ -1017,6 +1022,18 @@
   
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        $(document).ready(
+            function(){
+                $("#show-token").click(function(){
+                    $(".token").removeClass("hidden"),
+                    $(".token").addClass("table-row")
+                    $(this).fadeOut()
+                })
+            }
+        )
     </script>
 
 </body>
